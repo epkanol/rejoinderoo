@@ -1,0 +1,85 @@
+\documentclass[a4paper,11pt, parskip=half]{scrartcl}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+\usepackage{eurosym}
+\usepackage{soul}
+\usepackage{tcolorbox}
+\usepackage{palatino}
+
+\usepackage{fancyhdr}
+\usepackage{fancybox}
+\usepackage{fancyvrb}
+
+\RequirePackage[authoryear]{natbib}
+
+\usepackage{a4wide}
+
+\tcbuselibrary{breakable}
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+%% Paper Title and ID %%
+%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\paperId}{EMSE-D-24-00235}
+\newcommand{\paperTitle}{Governing the Commons: Code Ownership and Code-Clones in Large-Scale Software Development}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LO]{\paperid{}}
+% even pages
+\fancyhead[RE]{\paperid{}}
+% odd/even pages
+\fancyhead[RO,LE]{\thepage}
+
+
+\usepackage[linktoc=all,bookmarks,bookmarksopen=true,bookmarksnumbered=true]{hyperref}
+
+\hypersetup{
+pdftitle = {\paperId{}},
+pdfsubject = {},
+colorlinks = false,
+}
+
+%%%%%custom-command%%%%%
+
+\begin{document}
+
+\thispagestyle{plain}
+
+\begin{center}
+Response to reviewers: \\[1em]
+
+ {\Large \paperTitle} \vspace{0.5cm} \\
+ {\paperId{}} \vspace{0.5cm} \\
+ \today \vspace{0.5cm} \\
+\end{center}
+
+
+Dear Editor(s), \\
+
+First of all, we would like to thank you and the reviewers for the time and effort that you have put into providing us with this detailed, valuable, and in-depth feedback, which (in our mind) helped us considerably strengthen the paper.
+
+We have addressed all reviewer comments, and provide the details in this rejoinder.
+In the updated submission, we have marked new, or substantially changed, sections in {{\color{blue}blue font}}.
+To keep readability, we have refrained from marking removed paragraphs in a similar manner---they have simply been removed (but are of course visible by comparing PDF documents in tools such as Acrobat, or simple ``diff'' of the \TeX data).
+We hope that this helps the reviewers to ``get up to speed'' with reviewing the revision.
+
+We hope you find the new version of the manuscript to your satisfaction and look forward to any further feedback you may provide.
+\\[3em]
+Best regards,
+
+Anders Sundelin
+Javier Gonzalez-Huerta
+Krzysztof Wnuk
+Richard Torkar
+
+\newpage
+
+%%%%%ccomments%%%%%
+
+%% Uncomment if references needed
+% \bibliographystyle{unsrt}
+% \bibliography{references}
+
+\end{document}
